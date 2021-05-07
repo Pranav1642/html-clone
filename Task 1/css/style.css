@@ -1,0 +1,310 @@
+* {
+  font-family: "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+    "Helvetica Neue", sans-serif;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo img {
+  width: 33%;
+  border-radius: 50px;
+  margin-left: 350px;
+}
+
+.navbar {
+  display: flex;
+  background-color: #24292f;
+  position: sticky;
+  top: 0;
+  cursor: pointer;
+}
+
+.nav-list {
+  width: 50%;
+  display: flex;
+  /* margin-left: -60px; */
+}
+
+.nav-list li {
+  list-style: none;
+  padding: 26px 20px;
+}
+
+.nav-list li a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav-list li a:hover {
+  text-decoration: none;
+  color: grey;
+}
+
+.rightNav {
+  width: 50%;
+  display: flex;
+  text-decoration: none;
+  color: white;
+  text-decoration: none;
+  list-style: none;
+  margin-left: 80px;
+}
+
+.rightNav li {
+  list-style: none;
+  padding: 26px 5px;
+}
+
+.rightNav li a:hover {
+  text-decoration: none;
+  color: grey;
+}
+
+.sign {
+  text-decoration: none;
+  color: white;
+}
+
+#Search {
+  padding: 5px;
+  font-size: 17px;
+  border: 1px rgb(75, 74, 74);
+  outline: none;
+  border-radius: 6px;
+  margin-right: 10px;
+  background-color: #3f4449;
+}
+
+#Search::placeholder {
+  color: #c1c1c1;
+}
+
+.firstsection {
+  height: 70vh;
+  background: #2a3138;
+}
+
+.firsthalf {
+  font-family: "Lucida Sans";
+}
+
+.box-main {
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  max-width: 80%;
+  background: #2a3138;
+  margin: auto;
+}
+
+.base {
+  text-align: center;
+  padding: 5%;
+}
+
+.secondhalf {
+  width: 70%;
+  background-color: white;
+  margin-top: 60px;
+  height: 20em;
+}
+
+.modal {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #474e5d;
+  padding-top: 50px;
+  color: black;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+.dev {
+  font-size: 70px;
+  text-align: left;
+}
+
+.dev2 {
+  font-size: 20px;
+}
+
+.firstfoot {
+  font-size: small;
+}
+
+.foot-dev {
+  font-size: 45px;
+}
+
+.last-div {
+  font-size: medium;
+}
+
+.user-sign {
+  padding: 5%;
+  color: black;
+  border-radius: 6px;
+}
+
+.use {
+  font-size: 10px;
+}
+
+.github {
+  margin-top: 15px;
+  padding: 8px 100px;
+  /* background-color: #00cc558e; */
+  color: white;
+  background-image: linear-gradient(to top, #00b74b, #00cc555e);
+  border-radius: 6px;
+  box-shadow: none;
+  border: none;
+}
+
+.sign-git {
+  margin-top: 15px;
+  padding: 8px 40px;
+  background-color: white;
+  border-radius: 6px;
+  color: #1c66d7;
+  /* border: 1px black; */
+  outline: none;
+  border: 1px rgb(105, 103, 103) solid;
+}
+
+.burger {
+  display: none;
+  position: absolute;
+  cursor: pointer;
+  right: 5%;
+  top: 15px;
+}
+
+.line {
+  width: 33px;
+  background-color: white;
+  height: 4px;
+  margin: 5px 3px;
+}
+
+#same {
+  width: 95%;
+  padding: 6px;
+  border-radius: 6px;
+  outline: none;
+  border-style: inset;
+  border-color: grey;
+  border: 1px rgb(105, 103, 103) solid;
+}
+
+.same-1 {
+  color: rgb(53, 49, 49);
+}
+
+@media only screen and (max-width: 1140px) {
+  .burger {
+    display: block;
+  }
+  .logo img {
+    width: 33%;
+    border-radius: 50px;
+    margin-left: 0px;
+    padding: 0%;
+  }
+  .navbar {
+    flex-direction: column;
+  }
+  .nav-list {
+    padding: 0px;
+  }
+  .box-main {
+    flex-direction: column;
+  }
+  .h-nav {
+    height: 72px;
+  }
+  .v-class {
+    opacity: 0;
+  }
+  .base {
+    padding-top: 20em;
+  }
+  .github {
+    padding: 6px 10px;
+  }
+  .firstsection {
+    height: 100%;
+  }
+  .secondhalf {
+    padding-bottom: 10px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .same-1 {
+    display: none;
+  }
+  #same {
+    display: none;
+  }
+  .use {
+    display: none;
+  }
+  .burger {
+    display: block;
+  }
+  .logo img {
+    width: 33%;
+    border-radius: 50px;
+    margin-left: 0px;
+    padding: 0%;
+  }
+  .navbar {
+    flex-direction: column;
+  }
+  .nav-list {
+    padding: 0px;
+  }
+  .box-main {
+    flex-direction: column;
+  }
+  .h-nav {
+    height: 72px;
+  }
+  .v-class {
+    opacity: 0;
+  }
+  .base {
+    padding-top: 20em;
+  }
+  .github {
+    padding: 6px 10px;
+  }
+  .firstsection {
+    height: 100%;
+  }
+  .secondhalf {
+    height: auto;
+    background: #2a3138;
+  }
+  .user-sign {
+    height: auto;
+  }
+}
